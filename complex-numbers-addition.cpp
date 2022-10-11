@@ -3,26 +3,26 @@
 using namespace std;
 class Complex{
 public:
-    int real;
+    int r;
     int imag;
      /* Function to set the values of
       * real and imaginary part of each complex number
       */
      void setvalue()
     {
-        cin>>real;
+        cin>>r;
         cin>>imag;
     }
 	/* Function to display the sum of two complex numbers */
     void display()
     {
-        cout<<real<<"+"<<imag<<"i"<<endl;
+        cout<<r<<"+"<<imag<<"i"<<endl;
     }
 	/* Function to add two complex numbers */
  
     void sum(Complex c1, Complex c2)
     {
-        real=c1.real+c2.real;
+        r=c1.r+c2.real;
         imag=c1.imag+c2.imag;
     }
     };
