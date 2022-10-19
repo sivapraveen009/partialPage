@@ -106,3 +106,18 @@ p.none {border-style: none;}
 p.hidden {border-style: hidden;}
 p.mix {border-style: dotted dashed solid double;}
   </style>
+
+
+
+ @Override    
+    public void start(Stage primaryStage) throws Exception { 
+         
+        StackPane layout = new StackPane();
+        Scene scene = new Scene(layout, 200, 200);  
+         
+        TextField text = new TextField();
+        layout.getChildren().addAll(text);
+     
+        primaryStage.setTitle("CodersLegacy");
+        primaryStage.setScene(scene);   
+        primaryStage.show();
